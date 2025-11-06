@@ -1,10 +1,49 @@
-<!Doctype html>
-<hmtl>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Gtihub Actions Demo</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindFuel | Focus. Grow. Achieve.</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hello Github Actions</h1>
+  <header>
+    <h1>🌱 MindFuel</h1>
+    <p class="tagline">Focus. Grow. Achieve.</p>
+  </header>
+
+  <main>
+    <!-- Motivation Section -->
+    <section class="card">
+      <h2>✨ Daily Motivation</h2>
+      <p id="quote">Click below for your daily dose of motivation.</p>
+      <button onclick="generateQuote()">New Quote</button>
+    </section>
+
+    <!-- Focus Timer Section -->
+    <section class="card">
+      <h2>⏱️ Focus Timer</h2>
+      <div id="timer">25:00</div>
+      <div class="timer-controls">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+      </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section class="card">
+      <h2>🎯 Your Goals</h2>
+      <input type="text" id="goalInput" placeholder="Enter a goal..." />
+      <button onclick="addGoal()">Add Goal</button>
+      <ul id="goalList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ for dreamers, doers & learners.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
