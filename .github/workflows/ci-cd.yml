@@ -29,7 +29,7 @@ jobs:
       - name: Upload site files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './public'   # uploads everything (HTML, CSS, JS, etc.)
+          path: './site'  # uploads everything (HTML, CSS, JS, etc.)
 
       - name: Deploy to GitHub Pages
         id: deployment
